@@ -1,4 +1,4 @@
-import needClass.ListNode;
+import neededClass.ListNode;
 
 //链表问题
 public class _2_new_add {
