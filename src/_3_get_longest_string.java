@@ -9,14 +9,14 @@ public class _3_get_longest_string {
 //        lengthOfLongestSubstring_1("asdf");
 //        boolean r=all_unique("ab");
 //        System.out.println(r);
-        String a = "abcabc";
+        String a = "aabccc";
         lengthOfLongestSubstring_2(a);
 //        all_unique(a);
 
 
     }
 
-//    暴力解决法
+//    暴力解决法：便利所有的子字符串，判断子字符串内部有没有重复的字符
     static private int lengthOfLongestSubstring_1(String s) {
         String longest = "";
         int length = 0;
@@ -46,6 +46,7 @@ public class _3_get_longest_string {
     }
 
 //    滑动窗口法
+//    与暴力解决方法相比，它的优势表现在哪里？
     static private int lengthOfLongestSubstring_2(String s) {
         int n = s.length();
         Set<Character> set = new HashSet<>();
@@ -59,6 +60,7 @@ public class _3_get_longest_string {
             else {
                 set.remove(s.charAt(i++));
             }
+            System.out.println(set);
         }
         System.out.println(ans);
         return ans;
