@@ -1,6 +1,7 @@
 import needClass.ListNode;
 
-//链表问题
+//此处的链表是单向的链表，都是存储着下一个链表对象
+//算法需要考虑到某些特殊情况的细节，做到严密
 public class _2_new_add {
     public static void main(String[] args) {
         int[] a = new int[]{2, 4, 3};
