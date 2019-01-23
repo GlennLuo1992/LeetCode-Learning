@@ -1,4 +1,4 @@
-import needClass.ListNode;
+import neededClass.ListNode;
 
 //此处的链表是单向的链表，都是存储着下一个链表对象
 //算法需要考虑到某些特殊情况的细节，做到严密

@@ -9,12 +9,14 @@ public class _3_get_longest_string {
 //        lengthOfLongestSubstring_1("asdf");
 //        boolean r=all_unique("ab");
 //        System.out.println(r);
-        String a = "vwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\\\"#$%&'()*+,-./:;<=>?@[\\\\]^_`{|}~ abcdefghijklmnopqrstuvwxyzABCD";
-        lengthOfLongestSubstring_1(a);
+        String a = "abcabc";
+        lengthOfLongestSubstring_2(a);
 //        all_unique(a);
+
 
     }
 
+//    暴力解决法
     static private int lengthOfLongestSubstring_1(String s) {
         String longest = "";
         int length = 0;
@@ -41,5 +43,24 @@ public class _3_get_longest_string {
             set.add(ch);
         }
         return true;
+    }
+
+//    滑动窗口法
+    static private int lengthOfLongestSubstring_2(String s) {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        int ans = 0, i = 0, j = 0;
+        while (i < n && j < n) {
+            // try to extend the range [i, j]
+            if (!set.contains(s.charAt(j))){
+                set.add(s.charAt(j++));
+                ans = Math.max(ans, j - i);
+            }
+            else {
+                set.remove(s.charAt(i++));
+            }
+        }
+        System.out.println(ans);
+        return ans;
     }
 }
