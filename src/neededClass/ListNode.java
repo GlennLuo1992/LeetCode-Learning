@@ -1,4 +1,4 @@
-package needClass;
+package neededClass;
 
 public class ListNode {
     public int val;
