@@ -1,3 +1,5 @@
+package practise2019;
+
 public class _4_middle_number {
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package practise2019;
+
 import neededClass.ListNode;
 
 //此处的链表是单向的链表，都是存储着下一个链表对象

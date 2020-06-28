@@ -1,3 +1,5 @@
+package practise2019;
+
 import java.util.Arrays;
 
 public class _5_numTeams {
@@ -57,5 +59,9 @@ public class _5_numTeams {
     public static void main(String[] args) {
         int[] x = {1, 2, 3, 4};
         numTeams_1(x);
+        Float s = new Float(0.1f);
+        Float t = new Float(0.1f);
+        Double u = new Double(0.1);
+        System.out.println(u.equals(t));
     }
 }
