@@ -16,6 +16,7 @@ public class _9_reverseLeftWords {
         }
         return new String(result);
     }
+//  当然，用一个简单的办法去做没有问题，需要有这种第一反应，但是，好的算法真的可以帮你节省很多时间
     public static String reverseLeftWords_1(String s, int n) {
         String s1 = s.substring(0,n);
         String s2 = s.substring(n);
