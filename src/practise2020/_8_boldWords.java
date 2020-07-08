@@ -1,5 +1,8 @@
 package practise2020;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class _8_boldWords {
     public static void main(String[] args) {
         String[] words = new String[]{"ab", "bc"};
